@@ -29,7 +29,7 @@ const homepage = () => {
 
   const homepageButtonAbout = document.createElement("button");
   homepageButtonAbout.setAttribute("class", "homepage");
-  homepageButtonAbout.setAttribute("id", "AboutBtn");
+  homepageButtonAbout.setAttribute("id", "aboutBtn");
   homepageButtonAbout.textContent = "About";
   homepageNav.appendChild(homepageButtonAbout);
 
