@@ -1,0 +1,3 @@
+const menupage = () => {};
+
+export { menupage };

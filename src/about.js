@@ -1,0 +1,3 @@
+const aboutpage = () => {};
+
+export { aboutpage };
