@@ -1,3 +1,5 @@
+import LesCollinesEntrance from "./lesCollinnesEntrance.jpg";
+
 const homepage = () => {
   const homepageDivContent = document.querySelector("#content");
 
@@ -15,16 +17,19 @@ const homepage = () => {
 
   const homepageButtonHome = document.createElement("button");
   homepageButtonHome.setAttribute("class", "homepage");
+  homepageButtonHome.setAttribute("id", "homeBtn");
   homepageButtonHome.textContent = "Home";
   homepageNav.appendChild(homepageButtonHome);
 
   const homepageButtonMenu = document.createElement("button");
   homepageButtonMenu.setAttribute("class", "homepage");
+  homepageButtonMenu.setAttribute("id", "menuBtn");
   homepageButtonMenu.textContent = "Menu";
   homepageNav.appendChild(homepageButtonMenu);
 
   const homepageButtonAbout = document.createElement("button");
   homepageButtonAbout.setAttribute("class", "homepage");
+  homepageButtonAbout.setAttribute("id", "AboutBtn");
   homepageButtonAbout.textContent = "About";
   homepageNav.appendChild(homepageButtonAbout);
 
@@ -57,7 +62,7 @@ const homepage = () => {
 
   const homepageImage = document.createElement("img");
   homepageImage.setAttribute("id", "restaurantEntrance");
-  homepageImage.setAttribute("src", "lesCollinnesEntrance.jpg");
+  homepageImage.setAttribute("src", LesCollinesEntrance);
   homepageImage.setAttribute("alt", "Entrance of the restaurant");
   homepageDivImage.appendChild(homepageImage);
 };
