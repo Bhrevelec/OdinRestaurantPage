@@ -2,6 +2,7 @@ import LesCollinesEntrance from "./lesCollinnesEntrance.jpg";
 
 const homepage = () => {
   const homepageDivContent = document.querySelector("#content");
+  homepageDivContent.setAttribute("class", "homepage");
 
   const homepageDivLeft = document.createElement("div");
   homepageDivLeft.setAttribute("class", "homepage-left");
