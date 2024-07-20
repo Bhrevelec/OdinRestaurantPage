@@ -7,6 +7,13 @@ const content = document.querySelector("#content");
 const openPage = (tab) => {
   //clear current content
   content.innerHTML = "";
+  if (content.classList.contains("homepage")) {
+    content.classList.remove("homepage");
+  } else if (content.classList.contains("menupage")) {
+    content.classList.remove("menupage");
+  } else if (content.classList.contains("aboutpage")) {
+    content.classList.remove("aboutpage");
+  }
 
   //load new content
   switch (tab) {
@@ -30,34 +37,13 @@ const menuButton = document.querySelector("#menuBtn");
 const aboutButton = document.querySelector("#aboutBtn");
 
 homeButton.addEventListener("click", () => {
-  if (content.classList.contains("homepage")) {
-    content.classList.remove("homepage");
-  } else if (content.classList.contains("menupage")) {
-    content.classList.remove("menupage");
-  } else if (content.classList.contains("aboutpage")) {
-    content.classList.remove("aboutpage");
-  }
   openPage("home");
 });
 
 menuButton.addEventListener("click", () => {
-  if (content.classList.contains("homepage")) {
-    content.classList.remove("homepage");
-  } else if (content.classList.contains("menupage")) {
-    content.classList.remove("menupage");
-  } else if (content.classList.contains("aboutpage")) {
-    content.classList.remove("aboutpage");
-  }
   openPage("menu");
 });
 
 aboutButton.addEventListener("click", () => {
-  if (content.classList.contains("homepage")) {
-    content.classList.remove("homepage");
-  } else if (content.classList.contains("menupage")) {
-    content.classList.remove("menupage");
-  } else if (content.classList.contains("aboutpage")) {
-    content.classList.remove("aboutpage");
-  }
   openPage("about");
 });
