@@ -8,7 +8,13 @@ body {
   width: auto;
 }
 
-#content {
+#restaurantOutside {
+  width: 50vw;
+  height: auto;
+}
+
+#content.homepage,
+#content.aboutpage {
   display: flex;
 }
 
@@ -17,11 +23,13 @@ header {
   padding: 0;
 }
 
-div.homepage-text {
+div.homepage-text,
+div.aboutpage-text {
   margin: 30px 20px 0 20px;
 }
 
-nav.homepage {
+nav.homepage,
+nav.aboutpage {
   height: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -30,13 +38,19 @@ nav.homepage {
   background-color: #355e3b;
 }
 
-button.homepage {
+button.homepage,
+button.aboutpage {
   padding: 10px;
   border: 2px solid black;
   font-weight: bold;
   background-color: #ecffdc;
 }
 
-header.homepage {
+header.homepage,
+header.aboutpage {
   height: 100px;
+}
+
+div.aboutpage-img {
+  text-align: center;
 }
